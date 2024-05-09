@@ -1,0 +1,43 @@
+def greet(bot_name,birth_year):
+ print("Hello, my name is ",bot_name, format(bot_name))
+ print("I was created in {0}", format(birth_year))
+def remind_name():
+ print("Please, remind me your name")
+ name=input()
+ print("What a great name you have, ",name,"!", format(remind_name))
+def guess_age():
+ print("Let me guess your age")
+ print("Enter remainder of dividing your age by 3,5 and 7")
+ rem3=int(input())
+ rem5=int(input())
+ rem7=int(input())
+ age=(rem3*70+rem5*21+rem7*15)%105
+ print("Your age is",age,", that's great time to start programming!")
+def count():
+ print("How I will prove to you that I can count to any number you want")
+ num=int(input())
+ count=0
+ while count<=num:
+     print("{0}!", format(count))
+     count+=1
+def test():
+ print("let test your program knowldege")
+ print("Why we do you use method?")
+ print("1. To repeat a statement in multiple time")
+ print("2. To decompose a program into sevaral small subroutine")
+ print("3. To determine the execution time of a program")
+ print("4. To interupt the execution of a program")
+ answer=2
+ guess=int(input())
+ while guess!=answer:
+     print("Please, try again")
+     guess=int(input())
+     print("Complete, have a nice day")
+def end():
+ print("Congratulations, you won")
+greet('TE-Chatbot','2024')
+remind_name()
+guess_age()
+count()
+test()
+end()
